@@ -1,4 +1,5 @@
-description 'made by TXFW'
+description 'QBCore Chat Script By DGX'
+author '𝘿𝙂𝙓#4892'
 
 ui_page 'html/index.html'
 
