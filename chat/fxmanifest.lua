@@ -1,3 +1,8 @@
+
+fx_version "cerulean"
+games { "gta5" }
+
+lua54 'yes'
 description 'QBCore Chat Script By DGX'
 author '𝘿𝙂𝙓#4892'
 
