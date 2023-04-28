@@ -1,0 +1,237 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+    src: url("../BarlowCondensed.ttf");
+
+* {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+}
+
+.chat-window {
+  position: absolute;
+  left: 15px;
+  width: 32vw;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 5vh;
+  -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  max-height: 100%;
+  font-size: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.prefix {
+  font-size: 1.8vh;
+  color: 1px solid #fffefe;
+  text-shadow: 0px 0px 15px #ffffff;
+  position: absolute;
+  margin-top: 0.8%;
+  margin-left: 1.10%;
+  left: 0.208%;
+}
+
+.chat-input {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 27vh;
+  left: 15px;
+  width: 28vw;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.80vw;
+  padding-left: 1.90vw;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 0px 15px #ffffff;
+  width: 80%;
+  min-height: 3.8vh;
+  max-height: 3.8vh;
+  border-bottom: 2.0px solid rgba(255, 255, 255, 1.0);
+  border-top: rgba(0, 0, 0, 0);
+  border-left: rgba(0, 0, 0, 0);
+  border-right: rgba(0, 0, 0, 0);
+  border-radius: 15px 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 27px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px #ffffff;
+  width: 80%;
+  border-radius: 15px 0px 30px;s
+}
+
+.help {
+  margin-top: -10px;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #ff0000;
+}
+
+.disabled {
+  margin-top: -10px;
+  color: #ffffff93;
+  text-shadow: 0px 0px 5px #ff0000;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+  color: #ffffffec;
+  text-shadow: 0px 0px 5px #ff0000;
+}
+
+.chat-message {
+  display: inline-block !important;
+  padding: 0.65vw;
+  margin: 0.2vw;
+  border-radius: 15px 0px 30px;
+  background-color: rgba(255, 0, 0, 0.9);
+  box-shadow: 0px 0px 5px #ff0000;
+  text-shadow: 0px 0px 5px #ffffff;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.restart {
+  display: inline-block !important;
+  padding: 0.65vw;
+  margin: 0.1vw;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.9);
+  box-shadow: 0px 0px 15px #ff0000;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.chat-message-body {
+ /* margin-top: 10px;*/
+}
+
+.chat-message.advert {
+  background-color: rgba(255, 0, 0, 0.8);
+  box-shadow: 0px 0px 15px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.warning {
+  background-color: rgb(3, 3, 3);
+  box-shadow: 0px 0px 5px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.normal {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 5px #88ff00;
+  border-radius: 15px 0px 30px;
+
+}
+
+.error {
+  background-color: rgb(2, 2, 2);
+  box-shadow: 0px 0px 5px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.chat-message.system {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 5px #88ff00;
+  border-radius: 15px 0px 30px;
+}
+
+.chat-message.emergency {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.chat-message.nonemergency {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.chat-message.report {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px #ff0000;
+  border-radius: 15px 0px 30px;
+}
+
+.buttons button{
+  margin-top:10px;
+  background-color: rgb(255, 0, 0);
+  padding-left: 1.4vw;
+  padding-right: 1.6vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  border-radius: 15px 0px 30px;
+  box-shadow: 0px 0px 5px #ff0000;
+  text-shadow: 0px 0px 10px #ffffff;
+  transform: perspective(1200px) rotateY(35deg) !important;
+  font-size: 10.3px;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  color:rgb(255, 255, 255);
+  font-weight: bolder;
+}
