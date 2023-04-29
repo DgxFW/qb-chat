@@ -1,6 +1,6 @@
-RepentzFW = nil
+QBCore = nil
 
-TriggerEvent('RepentzFW:GetObject', function(obj) RepentzFW = obj end)
+TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
 RegisterServerEvent('chat:init')
 RegisterServerEvent('chat:addTemplate')
